@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../midia/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-family: 'Segoe UI';
+}
+
+/*logo-animation*/
+@keyframes jumping {
+    from {transform: translateY(-12px);}
+	50% {transform: translateY(0);}
+	to {transform: translateY(-12px);}
+}
+#ggtitle {
+    margin: 36px 55px;
+    transform: translate(-50%, -50%);
+	animation: jumping 1s linear infinite;
+    transition: 0.3s;
+}
+
+/*menu-nav*/
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    position: fixed;
+    top: 10%;
+    right: 40px;
+}
+ul li {
+    transition: 0.3s;
+}
+ul li:hover {
+    transform: scale(0.95);
+}
+ul li a { 
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;  
+    background: #CDEAA0;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 30px;
+}
+
+/*contents-posts*/
+#post-content {
+    background-color: white;
+    margin: 100px 233px 53px 62px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+}
+#post-content h3 {
+    color: rgb(78, 78, 78);
+}
+#post-content h4{
+    color: 008CFF;
+}
+
+img.deimg {
+    height: 250px;
+    margin-right: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.links:hover {
+    color: grey;
+}
+
+/*mod-footer*/
+footer {
+    background: rgba(65, 65, 65, 0.473);
+    color: white;
+    padding: 20px 60px 25px 60px;
+    
+}
+footer img{
+    height: 70px;
+}
+footer #links {
+    display: flex;
+    gap: 50px;
+    padding-left: 150px;
+}
+footer a {
+	color: grey;
+	text-decoration: none;
+    font-size: 20px;
+}
+footer a:hover {
+	color: white;
+}
+footer a#golden:hover {
+    color: rgb(192, 163, 0);
+}
+footer p{
+    display: flex;
+    gap: 50px;
+    padding-left: 100px;
+}
+footer p a#orange:hover {
+    color: #FD7957;
+}
+footer p a#yellow:hover {
+    color: #F1FF88;
+}
+footer p a#pink:hover {
+    color: #FD8FCC;
+}
+footer p a#red:hover {
+    color: rgb(255, 100, 100);
+}
